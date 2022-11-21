@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Vitri= -1;
+    const ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    const chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let nhap = prompt('Nhap ten sao');
+
+    function findSao(sao) {
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (nhap == ngoiSao[i]) {
+                Vitri=i;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    if(findSao(nhap)){
+        document.write(chomSao[Vitri]);
+    }else{
+        document.write('k tim thay');
+    }
+
+
+</script>
+</body>
+</html>
